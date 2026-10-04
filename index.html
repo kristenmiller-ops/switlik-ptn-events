@@ -1,17 +1,12 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Switlik PTN | 2026–27 Events & Quick Links</title>
-
   <meta name="description"
-        content="Switlik PTN 2026–27 school year events, forms, and quick links." />
-
+        content="Switlik PTN 2026–27 school year events, forms, fundraisers, and quick links." />
   <style>
-
     :root{
       --red:#c8102e;
       --dark:#111111;
@@ -20,15 +15,12 @@
       --line:#dedede;
       --muted:#666;
     }
-
     *{
       box-sizing:border-box;
     }
-
     html{
       scroll-behavior:smooth;
     }
-
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
@@ -41,7 +33,6 @@
         #f3f3f3;
       color:var(--dark);
     }
-
     .page{
       width:min(980px, calc(100% - 24px));
       margin:24px auto;
@@ -51,7 +42,6 @@
       box-shadow:0 12px 35px rgba(0,0,0,.12);
       border:1px solid #e7e7e7;
     }
-
     .topbar{
       background:var(--dark);
       color:#fff;
@@ -61,7 +51,6 @@
       font-size:.85rem;
       font-weight:700;
     }
-
     header{
       position:relative;
       padding:34px 24px 26px;
@@ -75,7 +64,6 @@
         );
       border-bottom:6px solid var(--red);
     }
-
     .paw-row{
       display:flex;
       justify-content:center;
@@ -83,7 +71,6 @@
       font-size:1.6rem;
       margin-bottom:8px;
     }
-
     .brand{
       margin:0;
       font-size:clamp(2.7rem,8vw,5.5rem);
@@ -97,7 +84,6 @@
         3px 3px 0 #fff,
         5px 5px 0 var(--dark);
     }
-
     .brand span{
       display:block;
       color:var(--dark);
@@ -106,7 +92,6 @@
       -webkit-text-stroke:0;
       text-shadow:none;
     }
-
     .year-pill{
       display:inline-block;
       margin-top:20px;
@@ -118,7 +103,6 @@
       border-radius:999px;
       letter-spacing:.04em;
     }
-
     .subtitle{
       margin:18px 0 0;
       font-family:Georgia,"Times New Roman",serif;
@@ -127,14 +111,12 @@
       font-weight:700;
       line-height:1;
     }
-
     .intro{
       max-width:760px;
       margin:14px auto 0;
       color:var(--muted);
       font-size:.98rem;
     }
-
     .updated{
       margin-top:10px;
       font-size:.8rem;
@@ -143,9 +125,7 @@
       letter-spacing:.02em;
       text-transform:uppercase;
     }
-
     /* NAVIGATION */
-
     .quicknav{
       display:flex;
       justify-content:center;
@@ -153,7 +133,6 @@
       flex-wrap:wrap;
       padding:16px 16px 0;
     }
-
     .quicknav a{
       text-decoration:none;
       color:var(--dark);
@@ -166,24 +145,19 @@
       text-transform:uppercase;
       letter-spacing:.03em;
     }
-
     .quicknav a:first-child{
       background:var(--red);
       border-color:var(--red);
       color:#fff;
     }
-
     main{
       padding:22px;
     }
-
     /* SECTION HEADINGS */
-
     .links-wrap{
       margin-bottom:26px;
       scroll-margin-top:16px;
     }
-
     .section-kicker{
       margin:0 0 8px;
       color:var(--red);
@@ -192,22 +166,18 @@
       letter-spacing:.08em;
       text-transform:uppercase;
     }
-
     .links-intro{
       margin:0 0 14px;
       color:var(--muted);
       font-size:.92rem;
       line-height:1.4;
     }
-
     /* QUICK LINKS */
-
     .link-grid{
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
       gap:10px;
     }
-
     .link-button{
       display:flex;
       align-items:center;
@@ -222,29 +192,23 @@
       line-height:1.2;
       box-shadow:0 2px 7px rgba(0,0,0,.04);
     }
-
     .link-button:hover{
       background:#fff7f8;
       border-color:var(--red);
     }
-
     .link-button .emoji{
       font-size:1.35rem;
       flex:0 0 auto;
     }
-
     /* COMING UP SOON */
-
     .upcoming-wrap{
       margin-bottom:30px;
       scroll-margin-top:16px;
     }
-
     .upcoming-list{
       display:grid;
       gap:12px;
     }
-
     .upcoming-card{
       border:3px solid var(--red);
       border-radius:18px;
@@ -256,26 +220,22 @@
       align-items:center;
       box-shadow:0 6px 16px rgba(200,16,46,.10);
     }
-
     .upcoming-card .icon{
       width:50px;
       height:50px;
       font-size:1.7rem;
     }
-
     .upcoming-title{
       font-weight:1000;
       font-size:clamp(1.05rem,3vw,1.4rem);
       text-transform:uppercase;
     }
-
     .upcoming-copy{
       margin-top:4px;
       color:var(--muted);
       font-size:.9rem;
       line-height:1.35;
     }
-
     .upcoming-date{
       color:var(--red);
       font-weight:1000;
@@ -283,25 +243,39 @@
       white-space:nowrap;
       text-align:right;
     }
-
+    /* ACTION BUTTONS */
+    .action-button{
+      display:inline-block;
+      margin-top:10px;
+      padding:9px 14px;
+      background:var(--red);
+      color:#fff;
+      text-decoration:none;
+      border-radius:999px;
+      font-size:.8rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.03em;
+      border:2px solid var(--red);
+    }
+    .action-button:hover{
+      background:var(--dark);
+      border-color:var(--dark);
+    }
     /* FULL CALENDAR */
-
     .calendar-wrap{
       margin-top:35px;
       padding-top:25px;
       border-top:2px solid var(--line);
       scroll-margin-top:16px;
     }
-
     .calendar-heading{
       margin-bottom:18px;
     }
-
     .events{
       display:grid;
       gap:10px;
     }
-
     .event{
       display:grid;
       grid-template-columns:54px 1fr auto;
@@ -313,7 +287,6 @@
       border-radius:14px;
       box-shadow:0 2px 7px rgba(0,0,0,.04);
     }
-
     .icon{
       width:46px;
       height:46px;
@@ -325,21 +298,24 @@
       font-size:1.6rem;
       border:2px solid #222;
     }
-
     .name{
       font-weight:900;
       font-size:clamp(1rem,2.6vw,1.28rem);
       text-transform:uppercase;
       letter-spacing:.01em;
     }
-
     .note{
       margin-top:3px;
       color:var(--muted);
       font-size:.82rem;
       font-weight:700;
     }
-
+    .winner-note{
+      margin-top:4px;
+      color:var(--red);
+      font-size:.86rem;
+      font-weight:1000;
+    }
     .date{
       min-width:120px;
       text-align:right;
@@ -348,17 +324,13 @@
       font-weight:1000;
       white-space:nowrap;
     }
-
     /* PREVIOUS EVENTS */
-
     #previous-events{
       margin-top:35px;
       padding-top:25px;
       border-top:2px solid var(--line);
     }
-
     /* FOOTER */
-
     .footer{
       margin-top:24px;
       padding:24px 20px 28px;
@@ -367,18 +339,15 @@
       color:#fff;
       border-top:6px solid var(--red);
     }
-
     .thanks{
       color:#fff;
       font-size:clamp(1.2rem,4vw,1.8rem);
       font-weight:900;
       font-style:italic;
     }
-
     .thanks b{
       color:#ff334f;
     }
-
     .subject{
       margin-top:9px;
       font-size:.82rem;
@@ -386,59 +355,47 @@
       text-transform:uppercase;
       opacity:.9;
     }
-
     .share{
       margin-top:14px;
       font-size:.8rem;
       opacity:.75;
     }
-
     /* MOBILE */
-
     @media(max-width:640px){
-
       .page{
         width:100%;
         margin:0;
         border-radius:0;
         border:0;
       }
-
       header{
         padding:28px 16px 22px;
       }
-
       main{
         padding:14px;
       }
-
       .link-grid{
         grid-template-columns:1fr;
       }
-
       .upcoming-card{
         grid-template-columns:46px 1fr;
         gap:10px 12px;
       }
-
       .upcoming-date{
         grid-column:2;
         text-align:left;
         margin-top:-4px;
       }
-
       .event{
         grid-template-columns:46px 1fr;
         padding:11px 12px;
         gap:10px 12px;
       }
-
       .icon{
         width:42px;
         height:42px;
         font-size:1.4rem;
       }
-
       .date{
         grid-column:2;
         text-align:left;
@@ -446,672 +403,513 @@
         font-size:1.12rem;
         margin-top:-5px;
       }
-
       .name{
         font-size:1rem;
       }
-
       .subtitle{
         font-size:2.4rem;
       }
     }
-
     @media print{
-
       body{
         background:#fff;
       }
-
       .page{
         box-shadow:none;
         width:100%;
         margin:0;
         border:none;
       }
-
     }
-
   </style>
 </head>
-
 <body>
-
 <div class="page">
-
   <div class="topbar">
     SWITLIK ELEMENTARY • PANTHER PRIDE 🐾
   </div>
-
   <header>
-
     <div class="paw-row">
       <span>★</span>
       <span>🐾</span>
       <span>★</span>
     </div>
-
     <h1 class="brand">
       SWITLIK
       <span>PTN</span>
     </h1>
-
     <div class="year-pill">
       2026–27 SCHOOL YEAR
     </div>
-
     <div class="subtitle">
       Events at a Glance
     </div>
-
     <p class="intro">
       Save this page for quick access to this year’s PTN events,
       forms, fundraisers, and important links.
     </p>
-
     <div class="updated">
-      Last updated September 28, 2026
+      Last updated October 4, 2026
     </div>
-
   </header>
-
   <!-- NAVIGATION -->
-
   <nav class="quicknav" aria-label="Quick navigation">
-
     <a href="#quick-links">Quick Links</a>
-
     <a href="#upcoming">Coming Up Soon</a>
-
     <a href="#all-events">Full Calendar</a>
-
     <a href="#previous-events">Previous Events</a>
-
   </nav>
-
   <main>
-
     <!-- QUICK LINKS -->
-
     <section class="links-wrap"
              id="quick-links"
              aria-label="PTN Quick Links">
-
       <p class="section-kicker">
         PTN Quick Links
       </p>
-
       <p class="links-intro">
         Looking for a form, fundraiser, or PTN page?
         Everything you need is right here.
       </p>
-
       <div class="link-grid">
-
         <a class="link-button"
            href="https://docs.google.com/forms/d/e/1FAIpQLSdbKpFCpJMB_msgmyAS5obu2J09wPm6zZ9MosIP6A8qNwoazw/viewform"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🐾</span>
           <span>PTN Membership</span>
-
         </a>
-
         <a class="link-button"
            href="https://forms.gle/ncDkTFMN9TrP7cVGA"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">💳</span>
           <span>Community Discount Card</span>
-
         </a>
-
         <a class="link-button"
            href="https://docs.google.com/forms/d/e/1FAIpQLScva45B0F5xWHb_-EqmUnrBZg7LRK_p4sjS4IEYFQW0tsBanw/viewform"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🎂</span>
           <span>Birthday Grams</span>
-
         </a>
-
         <a class="link-button"
            href="https://docs.google.com/forms/d/e/1FAIpQLSetYNkFFtGwf8In1lfNKwceZoo-h4FNuFJPsIzxeCLtejtgIg/viewform"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🎉</span>
           <span>Birthday Lawn Signs</span>
-
         </a>
-        
-                <a class="link-button"
+        <a class="link-button"
            href="https://docs.google.com/forms/d/e/1FAIpQLSdS7Zq1vcdNHPWYLFYNxBtiFSXrDafNf5-wU-Loo-yy1-sSlg/viewform"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🎃</span>
           <span>Trunk or Treat Sign-Up</span>
-
         </a>
-
         <a class="link-button"
            href="https://m.signupgenius.com/#!/showSignUp/10C0F4AADAD2EA3F5C07-66099365-trunk?useFullSite=false"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🚗</span>
           <span>Host a Trunk at Trunk or Treat</span>
-
         </a>
-
+        <a class="link-button"
+           href="https://www.storessimple.com/dependabilitees/switlik"
+           target="_blank"
+           rel="noopener">
+          <span class="emoji">👕</span>
+          <span>Shop Fall Spirit Wear</span>
+        </a>
+        <a class="link-button"
+           href="https://www.signupgenius.com/go/10C0E48ABAD29A6F9C61-66297855-fall"
+           target="_blank"
+           rel="noopener">
+          <span class="emoji">📚</span>
+          <span>Volunteer at the Book Fair</span>
+        </a>
         <a class="link-button"
            href="https://www.instagram.com/switlikptn75/"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">📱</span>
           <span>Follow Us on Instagram</span>
-
         </a>
-
         <a class="link-button"
            href="https://www.facebook.com/switlikPTN"
            target="_blank"
            rel="noopener">
-
           <span class="emoji">🌐</span>
           <span>Follow Us on Facebook</span>
-
         </a>
-
       </div>
-
     </section>
-
- 
-<!-- COMING UP SOON -->
-
-<section class="upcoming-wrap"
-         id="upcoming"
-         aria-label="Coming Up Soon">
-
-  <p class="section-kicker">
-    Coming Up Soon
-  </p>
-
-  <p class="links-intro">
-    Mark your calendars, Panthers!
-    Here's what's coming up next at Switlik and the Annex.
-  </p>
-
-  <div class="upcoming-list">
-    
-    
-<!-- CHICK-FIL-A DINE TO DONATE -->
-
-<article class="upcoming-card">
-
-  <div class="icon">🐔</div>
-
-  <div>
-    <div class="upcoming-title">
-      Dine to Donate at Chick-fil-A
-    </div>
-
-    <div class="upcoming-copy">
-      Enjoy a delicious meal while supporting
-      our Switlik Panthers! Join us for our
-      Chick-fil-A Dine to Donate fundraiser.
-      Ordering on the app? use code "26274" 
-      at checkout!
-    </div>
-  </div>
-
-  <div class="upcoming-date">
-    10/1
-  </div>
-
-</article>
-
-
-    <!-- FALL SPIRIT WEAR -->
-
-    <article class="upcoming-card">
-
-      <div class="icon">👕</div>
-
-      <div>
-        <div class="upcoming-title">
-          Fall Spirit Wear Sale
-        </div>
-
-        <div class="upcoming-copy">
-          Show off your Panther pride!
-          Fall Spirit Wear will be available
-          October 1–16.
-        </div>
+    <!-- COMING UP SOON -->
+    <section class="upcoming-wrap"
+             id="upcoming"
+             aria-label="Coming Up Soon">
+      <p class="section-kicker">
+        Coming Up Soon
+      </p>
+      <p class="links-intro">
+        Mark your calendars, Panthers!
+        Here's what's coming up next at Switlik and the Annex.
+      </p>
+      <div class="upcoming-list">
+        <!-- WEEK OF RESPECT -->
+        <article class="upcoming-card">
+          <div class="icon">💙</div>
+          <div>
+            <div class="upcoming-title">
+              Spirit Week: Week of Respect
+            </div>
+            <div class="upcoming-copy">
+              Join us all week as we celebrate kindness,
+              respect, and Panther pride!
+            </div>
+          </div>
+          <div class="upcoming-date">
+            10/5 – 10/9
+          </div>
+        </article>
+        <!-- FALL SPIRIT WEAR -->
+        <article class="upcoming-card">
+          <div class="icon">👕</div>
+          <div>
+            <div class="upcoming-title">
+              Fall Spirit Wear – On Sale Now!
+            </div>
+            <div class="upcoming-copy">
+              Show off your Panther pride! Fall Spirit Wear
+              is on sale now through October 20.
+            </div>
+            <a class="action-button"
+               href="https://www.storessimple.com/dependabilitees/switlik"
+               target="_blank"
+               rel="noopener">
+              Shop Spirit Wear
+            </a>
+          </div>
+          <div class="upcoming-date">
+            10/1 – 10/20
+          </div>
+        </article>
+        <!-- CHOCOLATE FUNDRAISER -->
+        <article class="upcoming-card">
+          <div class="icon">🍫</div>
+          <div>
+            <div class="upcoming-title">
+              World's Finest Chocolate Bar Fundraiser
+            </div>
+            <div class="upcoming-copy">
+              Support our Switlik Panthers with our
+              World's Finest Chocolate Bar Fundraiser!
+            </div>
+          </div>
+          <div class="upcoming-date">
+            10/6 – 10/27
+          </div>
+        </article>
+        <!-- FALL BOOK FAIR -->
+        <article class="upcoming-card">
+          <div class="icon">📚</div>
+          <div>
+            <div class="upcoming-title">
+              Fall Book Fair &amp; Coin Challenge
+            </div>
+            <div class="upcoming-copy">
+              Get ready for a week of books and friendly
+              competition! We also need volunteers to help
+              make our Fall Book Fair a success. Sign up for
+              a volunteer shift below!
+            </div>
+            <a class="action-button"
+               href="https://www.signupgenius.com/go/10C0E48ABAD29A6F9C61-66297855-fall"
+               target="_blank"
+               rel="noopener">
+              Volunteer for the Book Fair
+            </a>
+          </div>
+          <div class="upcoming-date">
+            10/13 – 10/16
+          </div>
+        </article>
       </div>
-
-      <div class="upcoming-date">
-        10/1 – 10/16
-      </div>
-
-    </article>
-
-    <!-- CHOCOLATE FUNDRAISER -->
-
-    <article class="upcoming-card">
-
-      <div class="icon">🍫</div>
-
-      <div>
-        <div class="upcoming-title">
-          World's Finest Chocolate Bar Fundraiser
-        </div>
-
-        <div class="upcoming-copy">
-          Support our Switlik Panthers with our
-          World's Finest Chocolate Bar Fundraiser!
-          More information coming soon.
-        </div>
-      </div>
-
-      <div class="upcoming-date">
-        10/6 – 10/27
-      </div>
-
-    </article>
-
-    <!-- FALL BOOK FAIR -->
-
-    <article class="upcoming-card">
-
-      <div class="icon">📚</div>
-
-      <div>
-        <div class="upcoming-title">
-          Fall Book Fair and Coin Challenge
-        </div>
-
-        <div class="upcoming-copy">
-          Get ready for a week of books and friendly
-          competition! More details coming soon.
-        </div>
-      </div>
-
-      <div class="upcoming-date">
-        10/13 – 10/16
-      </div>
-
-    </article>
-
-  </div>
-
-</section>
-
-
+    </section>
     <!-- FULL EVENTS CALENDAR -->
-
     <section class="calendar-wrap"
              id="all-events"
              aria-label="Full Events Calendar">
-
       <div class="calendar-heading">
-
         <p class="section-kicker">
           Full Events Calendar
         </p>
-
         <p class="links-intro">
           Plan ahead with our complete
           2026–27 PTN events calendar!
         </p>
-
       </div>
-
       <div class="events">
-
-   
-<!-- CHICK-FIL-A DINE TO DONATE -->
-
-<article class="event">
-
-  <div class="icon">🐔</div>
-
-  <div>
-    <div class="name">
-      Dine to Donate at Chick-fil-A
-    </div>
-  </div>
-
-  <div class="date">
-    10/1
-  </div>
-
-</article>
-
-<!-- FALL SPIRIT WEAR -->
-
-<article class="event">
-
-  <div class="icon">👕</div>
-
-  <div>
-    <div class="name">
-      Fall Spirit Wear Sale
-    </div>
-  </div>
-
-  <div class="date">
-    10/1 – 10/16
-  </div>
-
-
-
-        </article>
-
         <article class="event">
-
+          <div class="icon">💙</div>
+          <div>
+            <div class="name">
+              Spirit Week: Week of Respect
+            </div>
+          </div>
+          <div class="date">
+            10/5 – 10/9
+          </div>
+        </article>
+        <article class="event">
+          <div class="icon">👕</div>
+          <div>
+            <div class="name">
+              Fall Spirit Wear Sale
+            </div>
+            <div class="note">
+              On sale now!
+            </div>
+          </div>
+          <div class="date">
+            10/1 – 10/20
+          </div>
+        </article>
+        <article class="event">
           <div class="icon">🍫</div>
-
           <div>
             <div class="name">
               World's Finest Chocolate Bar Fundraiser
             </div>
           </div>
-
           <div class="date">
             10/6 – 10/27
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">📚</div>
-
           <div>
             <div class="name">
               Fall Book Fair and Coin Challenge
             </div>
           </div>
-
           <div class="date">
             10/13 – 10/16
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🎃</div>
-
           <div>
             <div class="name">
               Trunk or Treat
             </div>
           </div>
-
           <div class="date">
             10/23
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🛼</div>
-
           <div>
             <div class="name">
               Family Roller Skating Night
             </div>
           </div>
-
           <div class="date">
             11/19
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🎁</div>
-
           <div>
             <div class="name">
               Holiday Shop
             </div>
           </div>
-
           <div class="date">
             12/8 – 12/11
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">☕</div>
-
           <div>
             <div class="name">
               Cookies &amp; Cocoa
             </div>
           </div>
-
           <div class="date">
             12/12
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🎬</div>
-
           <div>
             <div class="name">
               Family Movie Night
             </div>
           </div>
-
           <div class="date">
             1/15
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🎯</div>
-
           <div>
             <div class="name">
               Bingo – Parents Night Out
             </div>
           </div>
-
           <div class="date">
             1/29
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🪩</div>
-
           <div>
             <div class="name">
               Winter Dance
             </div>
           </div>
-
           <div class="date">
             2/19
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">📖</div>
-
           <div>
             <div class="name">
               Read Across America Week
             </div>
-
             <div class="note">
               Book Fair &amp; Read-a-Thon
             </div>
           </div>
-
           <div class="date">
             3/2 – 3/6
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🐰</div>
-
           <div>
             <div class="name">
               Breakfast with the Bunny
             </div>
           </div>
-
           <div class="date">
             3/20
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🎨</div>
-
           <div>
             <div class="name">
               Color Run
             </div>
           </div>
-
           <div class="date">
             4/22
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">❤️</div>
-
           <div>
             <div class="name">
               Staff Appreciation Week
             </div>
           </div>
-
           <div class="date">
             5/3 – 5/7
           </div>
-
         </article>
-
         <article class="event">
-
           <div class="icon">🌸</div>
-
           <div>
             <div class="name">
               Mother's Day Plant Sale
             </div>
           </div>
-
           <div class="date">
             5/7
           </div>
-
         </article>
-
       </div>
-
     </section>
-
     <!-- PREVIOUS EVENTS -->
-
     <section class="links-wrap"
              id="previous-events"
              aria-label="Previous PTN Events">
-
       <p class="section-kicker">
         Previous Events
       </p>
-
       <p class="links-intro">
         Take a look back at our past PTN events and fundraisers!
         Thank you to everyone who participated and supported
         our Switlik Panthers!
       </p>
-
       <div class="events">
-
+        <!-- BACK TO SCHOOL GRAMS -->
         <article class="event">
-
           <div class="icon">💌</div>
-
           <div>
-
             <div class="name">
               Back to School Grams
             </div>
-
             <div class="note">
               Sale ended September 18
             </div>
-
           </div>
-
           <div class="date">
             9/8 – 9/18
           </div>
-
         </article>
-
+        <!-- SUPPLY BATTLE -->
+        <article class="event">
+          <div class="icon">📦</div>
+          <div>
+            <div class="name">
+              Supply Battle
+            </div>
+            <div class="winner-note">
+              🏆 CONGRATULATIONS, KINDERGARTEN!
+              Our Supply Battle champions!
+            </div>
+          </div>
+          <div class="date">
+            9/7 – 9/25
+          </div>
+        </article>
+        <!-- CHICK-FIL-A -->
+        <article class="event">
+          <div class="icon">🐔</div>
+          <div>
+            <div class="name">
+              Dine to Donate at Chick-fil-A
+            </div>
+            <div class="note">
+              Thank you to everyone who came out to support Switlik!
+            </div>
+          </div>
+          <div class="date">
+            10/1
+          </div>
+        </article>
       </div>
-
     </section>
-
   </main>
-
   <!-- FOOTER -->
-
   <footer class="footer">
-
     <div class="thanks">
       Thank you for supporting our
       <b>school community!</b> 🐾
     </div>
-
     <div class="subject">
       ★ All dates &amp; events are subject to change ★
     </div>
-
     <div class="share">
       Tip: Add this page to your phone's home screen
       so the calendar and PTN links are always easy to find.
     </div>
-
   </footer>
-
 </div>
-
 </body>
 </html>
